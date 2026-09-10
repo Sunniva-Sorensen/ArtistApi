@@ -16,11 +16,15 @@ namespace ArtistApi
             builder.Services.AddControllers();
             builder.Services.AddOpenApi();
             builder.Services.AddSingleton<IArtistRepo, ArtistRepo>();
+            
+            var spotifyToken = builder.Configuration["Spotify:Token"];
+
             builder.Services.AddHttpClient<ISpotifyClient, SpotifyClient>(client =>
             {
                 client.DefaultRequestHeaders.Authorization =
-                    new AuthenticationHeaderValue("Bearer", "BQBHT33kCnS_6oGx87EzPfKtKRUPmEpfDiR9TpTYT3UqTOkwh1DpRuAl5q6QgbP9NqJyZcKq2xvhIgtyP81nPJsbQyYPQi1_Jn0FnDr8SvyQVURj9FYdF4RvglH_E1IxyLuoJBazaSjW");
+                    new AuthenticationHeaderValue("Bearer", spotifyToken);
             });
+
 
 
             var app = builder.Build();
