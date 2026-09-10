@@ -1,0 +1,24 @@
+@ArtistApi_HostAddress = http://localhost:5005
+
+GET {{ArtistApi_HostAddress}}/artists
+Accept: application/json
+
+###
+GET {{ArtistApi_HostAddress}}/artists/12Chz98pHFMPJEknJQMWvI
+Accept: application/json
+
+###
+POST {{ArtistApi_HostAddress}}/artists
+Content-Type: application/json
+
+{
+  "id": "4Ui2kfOqGujY81UcPrb5KE",
+  "artistName": "HAIM"
+}
+
+###
+DELETE {{ArtistApi_HostAddress}}/artists/4Ui2kfOqGujY81UcPrb5KE
+
+###
+GET {{ArtistApi_HostAddress}}/artists/711MCceyCBcFnzjGY4Q7Un/spotify
+Accept: application/json
