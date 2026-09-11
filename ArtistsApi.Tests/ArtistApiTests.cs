@@ -2,6 +2,7 @@
 using ArtistApi.Clients;
 using ArtistApi.Dtos;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
 using System.Net;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -129,10 +130,10 @@ namespace ArtistsApi.Tests
             var client = factory.CreateClient();
 
             // Act – første kall (skal hente fra Spotify)
-            await client.GetAsync("/artists/abc/spotify");
+            await client.GetAsync("/artists/abc?includeDetails=true");
 
             // Act – andre kall (skal hente fra cache)
-            await client.GetAsync("/artists/abc/spotify");
+            await client.GetAsync("/artists/abc?includeDetails=true");
 
             // Assert – SpotifyClient skal kun ha blitt kalt én gang
             mockSpotify.Verify(x => x.GetArtist("abc"), Times.Once);

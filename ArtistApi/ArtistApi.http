@@ -20,5 +20,5 @@ Content-Type: application/json
 DELETE {{ArtistApi_HostAddress}}/artists/4Ui2kfOqGujY81UcPrb5KE
 
 ###
-GET {{ArtistApi_HostAddress}}/artists/711MCceyCBcFnzjGY4Q7Un/spotify
+GET {{ArtistApi_HostAddress}}/artists/711MCceyCBcFnzjGY4Q7Un?includeDetails=true
 Accept: application/json

@@ -26,7 +26,7 @@ namespace ArtistApi.Controllers
         }
 
         [HttpGet("{id}")]
-        public ActionResult<Artist> GetArtistById(string id)
+        public async Task<ActionResult> GetArtistById(string id, [FromQuery] bool includeDetails = false)
         {
             var artist = _repo.GetAllArtists()
                               .FirstOrDefault(a => a.Id == id);
@@ -34,7 +34,31 @@ namespace ArtistApi.Controllers
             if (artist == null)
                 return NotFound();
 
-            return artist;
+            if (!includeDetails)
+                return Ok(artist);
+
+            var cached = _repo.GetCachedSpotifyDetails(id);
+            SpotifyArtistDetails spotifyDetails;
+
+            if (cached != null)
+            {
+                spotifyDetails = cached;
+            }
+            else
+            {
+                spotifyDetails = await _spotifyClient.GetArtist(id);
+                _repo.CacheSpotifyDetails(id, spotifyDetails);
+            }
+
+            var result = new ArtistWithDetails
+            {
+                Id = artist.Id,
+                ArtistName = artist.ArtistName,
+                Popularity = spotifyDetails.Popularity,
+                Genres = spotifyDetails.Genres
+            };
+
+            return Ok(result);
         }
 
         //Lagt til feilhåndtering i etterkant for testene
@@ -68,41 +92,6 @@ namespace ArtistApi.Controllers
                 return NotFound();
 
             return NoContent();
-        }
-
-        [HttpGet("{id}/spotify")]
-        public async Task<ActionResult<ArtistWithDetails>> GetById(string id)
-        {
-            var artist = _repo.GetAllArtists()
-                      .FirstOrDefault(a => a.Id == id);
-
-            if (artist == null)
-                return NotFound();
-
-            //Implemeterer caching her
-            var cached = _repo.GetCachedSpotifyDetails(id);
-            SpotifyArtistDetails spotifyDetails;
-
-            if (cached != null)
-            {
-                spotifyDetails = (SpotifyArtistDetails)cached;
-            }
-            else
-            {
-                spotifyDetails = await _spotifyClient.GetArtist(id);
-                _repo.GetCachedSpotifyDetails(id);
-            }
-
-
-            var result = new ArtistWithDetails
-            {
-                Id = artist.Id,
-                ArtistName = artist.ArtistName,
-                Popularity = spotifyDetails.Popularity,
-                Genres = spotifyDetails.Genres
-            };
-
-            return result;
         }
 
     }
