@@ -1,4 +1,5 @@
 <Solution>
-  <Project Path="ArtistApi/ArtistApi.csproj" />
-  <Project Path="ArtistsApi.Tests/ArtistsApi.Tests.csproj" />
+  <Folder Name="/Solution Items/" />
+  <Project Path="../../../../../../OneDrive/Dokumenter vgs/Brights/ArtistApi/ArtistApi/ArtistApi.csproj" />
+  <Project Path="../../../../../../OneDrive/Dokumenter vgs/Brights/ArtistApi/ArtistsApi.Tests/ArtistsApi.Tests.csproj" />
 </Solution>

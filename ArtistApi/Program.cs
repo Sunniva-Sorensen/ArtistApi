@@ -1,7 +1,7 @@
-
 using ArtistApi.Clients;
 using ArtistApi.Models;
 using System.Net.Http.Headers;
+using Azure.Identity;
 
 namespace ArtistApi
 {
@@ -11,13 +11,17 @@ namespace ArtistApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            var keyVaultUrl = new Uri("https://kv-brights-common-01.vault.azure.net/");
+            builder.Configuration.AddAzureKeyVault(
+                keyVaultUrl,
+                new DefaultAzureCredential()
+            );
+
+            var spotifyToken = builder.Configuration["spotify-token"];
 
             builder.Services.AddControllers();
             builder.Services.AddOpenApi();
             builder.Services.AddSingleton<IArtistRepo, ArtistRepo>();
-            
-            var spotifyToken = builder.Configuration["Spotify:Token"];
 
             builder.Services.AddHttpClient<ISpotifyClient, SpotifyClient>(client =>
             {
@@ -25,23 +29,22 @@ namespace ArtistApi
                     new AuthenticationHeaderValue("Bearer", spotifyToken);
             });
 
-
-
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
+            app.MapGet("/test-secret", (IConfiguration config) =>
+            {
+                var token = config["spotify-token"];
+                return token ?? "Secret not found";
+            });
+
             if (app.Environment.IsDevelopment())
             {
                 app.MapOpenApi();
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
-
             app.Run();
         }
     }

@@ -1,0 +1,310 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\ArtistService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Services\\ArtistService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\IArtistService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Services\\IArtistService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\ArtistApi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\ArtistApi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\SpotifyClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Clients\\SpotifyClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\ArtistRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Models\\ArtistRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Controllers\\ArtistController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Controllers\\ArtistController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\Artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Models\\Artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\Artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistsApi.Tests\\Artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\ISpotifyClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Clients\\ISpotifyClient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\IArtistRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Models\\IArtistRepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\SpotifyArtistDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Dtos\\SpotifyArtistDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\ArtistsWithDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistApi\\Dtos\\ArtistsWithDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\ArtistApiTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ArtistsApi.Tests\\ArtistApiTests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 279,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-24T12:07:33.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dockerfile",
+              "RelativeDocumentMoniker": "ArtistApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dockerfile",
+              "RelativeToolTip": "ArtistApi\\Dockerfile",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAgAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-09-23T11:08:59.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Program.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Program.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Program.cs",
+              "RelativeToolTip": "ArtistApi\\Program.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:35:15.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SpotifyClient.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\SpotifyClient.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Clients\\SpotifyClient.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\SpotifyClient.cs",
+              "RelativeToolTip": "ArtistApi\\Clients\\SpotifyClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:13:31.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArtistRepo.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\ArtistRepo.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Models\\ArtistRepo.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\ArtistRepo.cs",
+              "RelativeToolTip": "ArtistApi\\Models\\ArtistRepo.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAmwDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:40:37.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ArtistController.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Controllers\\ArtistController.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Controllers\\ArtistController.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Controllers\\ArtistController.cs",
+              "RelativeToolTip": "ArtistApi\\Controllers\\ArtistController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:17:28.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Artist.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\Artist.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Models\\Artist.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\Artist.cs",
+              "RelativeToolTip": "ArtistApi\\Models\\Artist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:19:35.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Artist.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\Artist.cs",
+              "RelativeDocumentMoniker": "ArtistsApi.Tests\\Artist.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\Artist.cs",
+              "RelativeToolTip": "ArtistsApi.Tests\\Artist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T11:41:24.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ArtistApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\appsettings.json",
+              "RelativeToolTip": "ArtistApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-10T18:33:59.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ArtistApi.http",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\ArtistApi.http",
+              "RelativeDocumentMoniker": "ArtistApi\\ArtistApi.http",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\ArtistApi.http",
+              "RelativeToolTip": "ArtistApi\\ArtistApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-09-10T09:38:26.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ISpotifyClient.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\ISpotifyClient.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Clients\\ISpotifyClient.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Clients\\ISpotifyClient.cs",
+              "RelativeToolTip": "ArtistApi\\Clients\\ISpotifyClient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:13:15.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IArtistService.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\IArtistService.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Services\\IArtistService.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\IArtistService.cs",
+              "RelativeToolTip": "ArtistApi\\Services\\IArtistService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T09:15:47.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArtistService.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\ArtistService.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Services\\ArtistService.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Services\\ArtistService.cs",
+              "RelativeToolTip": "ArtistApi\\Services\\ArtistService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-11T09:15:59.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IArtistRepo.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\IArtistRepo.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Models\\IArtistRepo.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Models\\IArtistRepo.cs",
+              "RelativeToolTip": "ArtistApi\\Models\\IArtistRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T09:54:53.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SpotifyArtistDetails.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\SpotifyArtistDetails.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Dtos\\SpotifyArtistDetails.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\SpotifyArtistDetails.cs",
+              "RelativeToolTip": "ArtistApi\\Dtos\\SpotifyArtistDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:14:23.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ArtistsWithDetails.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\ArtistsWithDetails.cs",
+              "RelativeDocumentMoniker": "ArtistApi\\Dtos\\ArtistsWithDetails.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\Dtos\\ArtistsWithDetails.cs",
+              "RelativeToolTip": "ArtistApi\\Dtos\\ArtistsWithDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T12:14:37.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ArtistApiTests.cs",
+              "DocumentMoniker": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\ArtistApiTests.cs",
+              "RelativeDocumentMoniker": "ArtistsApi.Tests\\ArtistApiTests.cs",
+              "ToolTip": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistsApi.Tests\\ArtistApiTests.cs",
+              "RelativeToolTip": "ArtistsApi.Tests\\ArtistApiTests.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAADgv30AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-10T11:56:40.028Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 121,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

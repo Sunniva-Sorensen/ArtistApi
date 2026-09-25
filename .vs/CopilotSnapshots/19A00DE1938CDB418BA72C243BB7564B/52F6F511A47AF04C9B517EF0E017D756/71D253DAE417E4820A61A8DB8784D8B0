@@ -1,0 +1,50 @@
+﻿using ArtistApi.Dtos;
+using ArtistApi.Models;
+
+namespace ArtistApi.Services
+{
+    public class ArtistService : IArtistService
+    {
+        private readonly IArtistRepo _repo;
+        private readonly ISpotifyClient _spotifyClient;
+
+        public ArtistService(IArtistRepo repo, ISpotifyClient spotifyClient)
+        {
+            _repo = repo;
+            _spotifyClient = spotifyClient;
+        }
+
+        public async Task<object?> GetArtistAsync(string id, bool includeDetails)
+        {
+            var artist = _repo.GetAllArtists().FirstOrDefault(a => a.Id == id);
+            if (artist == null)
+                return null;
+
+            if (!includeDetails)
+                return artist;
+
+            var cached = _repo.GetCachedSpotifyDetails(id);
+            SpotifyArtistDetails spotifyDetails;
+
+            if (cached != null)
+            {
+                spotifyDetails = cached;
+            }
+            else
+            {
+                spotifyDetails = await _spotifyClient.GetArtist(id);
+                _repo.CacheSpotifyDetails(id, spotifyDetails);
+            }
+
+            var result = new ArtistWithDetails
+            {
+                Id = artist.Id,
+                ArtistName = artist.ArtistName,
+                Popularity = spotifyDetails.Popularity,
+                Genres = spotifyDetails.Genres
+            };
+
+            return result;
+        }
+    }
+}

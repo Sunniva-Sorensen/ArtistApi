@@ -1,0 +1,70 @@
+﻿using ArtistApi.Clients;
+using ArtistApi.Dtos;
+using ArtistApi.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq;
+
+namespace ArtistApi.Controllers
+{
+    [ApiController]
+    [Route("artists")]
+    public class ArtistController : ControllerBase
+    {
+        private readonly IArtistRepo _repo;
+        private readonly IArtistService _artistService;
+
+        public ArtistController(IArtistRepo repo, IArtistService artistService)
+        {
+            _repo = repo;
+            _artistService = artistService;
+        }
+        
+        [HttpGet]
+        public ActionResult<List<Artist>> GetAllArtists()
+        {
+            return _repo.GetAllArtists();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult> GetArtistById(string id, [FromQuery] bool includeDetails = false)
+        {
+            var result = await _artistService.GetArtistAsync(id, includeDetails);
+            if (result == null) return NotFound();
+            return Ok(result);
+        }
+
+        //Lagt til feilhåndtering i etterkant for testene
+        [HttpPost]
+        public ActionResult AddArtist(Artist artist)
+        {
+            if (string.IsNullOrWhiteSpace(artist.Id) ||
+                   string.IsNullOrWhiteSpace(artist.ArtistName))
+            {
+                return BadRequest("Artist must have id and name.");
+            }
+
+            try
+            {
+                _repo.AddArtist(artist);
+            }
+            catch (InvalidOperationException)
+            {
+                return Conflict("Artist with this ID already exists.");
+            }
+
+            return Created($"/artists/{artist.Id}", artist);
+        }
+
+        [HttpDelete("{id}")]
+        public ActionResult DeleteArtist(string id)
+        {
+            var deleted = _repo.DeleteArtist(id);
+
+            if (!deleted)
+                return NotFound();
+
+            return NoContent();
+        }
+
+    }
+}

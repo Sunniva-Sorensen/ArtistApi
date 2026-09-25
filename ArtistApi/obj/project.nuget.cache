@@ -1,12 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "5a74uRuOi14=",
+  "dgSpecHash": "dIIz+uASaJI=",
   "success": true,
   "projectFilePath": "C:\\Users\\sunns\\OneDrive\\Dokumenter vgs\\Brights\\ArtistApi\\ArtistApi\\ArtistApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sunns\\.nuget\\packages\\azure.core\\1.61.0\\azure.core.1.61.0.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\azure.extensions.aspnetcore.configuration.secrets\\1.5.2\\azure.extensions.aspnetcore.configuration.secrets.1.5.2.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\azure.identity\\1.21.0\\azure.identity.1.21.0.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\azure.security.keyvault.secrets\\4.11.0\\azure.security.keyvault.secrets.4.11.0.nupkg.sha512",
     "C:\\Users\\sunns\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
     "C:\\Users\\sunns\\.nuget\\packages\\microsoft.aspnetcore.testhost\\10.0.12\\microsoft.aspnetcore.testhost.10.0.12.nupkg.sha512",
-    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\10.0.9\\microsoft.bcl.asyncinterfaces.10.0.9.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.identity.client\\4.84.2\\microsoft.identity.client.4.84.2.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.84.2\\microsoft.identity.client.extensions.msal.4.84.2.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.14.0\\microsoft.identitymodel.abstractions.8.14.0.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\system.clientmodel\\1.15.0\\system.clientmodel.1.15.0.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\system.memory.data\\10.0.9\\system.memory.data.10.0.9.nupkg.sha512",
+    "C:\\Users\\sunns\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

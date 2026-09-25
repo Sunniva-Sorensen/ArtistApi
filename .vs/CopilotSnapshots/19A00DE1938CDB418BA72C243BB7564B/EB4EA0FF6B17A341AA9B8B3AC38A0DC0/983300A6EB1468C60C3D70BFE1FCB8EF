@@ -1,0 +1,144 @@
+﻿using ArtistApi;
+using ArtistApi.Clients;
+using ArtistApi.Dtos;
+using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.Extensions.DependencyInjection;
+using System.Net;
+using System.Net.Http.Json;
+using System.Text.Json;
+using System.Timers;
+using Moq;
+
+namespace ArtistsApi.Tests
+{
+    public class ArtistApiTests
+    {
+        private readonly HttpClient _client;
+
+        public ArtistApiTests()
+        {
+            var app = new WebApplicationFactory<Program>();
+            _client = app.CreateClient();
+        }
+
+        //Test av GET
+        [Fact]
+        public async Task GetAllArtists_ReturnsList()
+        {
+            var response = await _client.GetAsync("/artists");
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            var artists = JsonSerializer.Deserialize<List<Artist>>(json);
+
+            Assert.NotNull(artists);
+            Assert.True(artists.Count > 0);
+        }
+
+        //Test av POST
+        [Fact]
+        public async Task AddArtist_AddsNewArtist()
+        {
+            var newArtist = new Artist
+            {
+                Id = "4Ui2kfOqGujY81UcPrb5KE",
+                ArtistName = "HAIM"
+            };
+
+            var content = JsonContent.Create(newArtist);
+
+            var response = await _client.PostAsync("/artists", content);
+            response.EnsureSuccessStatusCode();
+
+            var getResponse = await _client.GetAsync("/artists/4Ui2kfOqGujY81UcPrb5KE");
+            Assert.True(getResponse.IsSuccessStatusCode);
+        }
+
+        //Test av DELETE
+        [Fact]
+        public async Task DeleteArtist_RemovesArtist()
+        {
+            var artist = new Artist { Id = "delete-me", ArtistName = "Temp" };
+            await _client.PostAsync("/artists", JsonContent.Create(artist));
+
+            var deleteResponse = await _client.DeleteAsync("/artists/delete-me");
+            Assert.True(deleteResponse.IsSuccessStatusCode);
+
+            var getResponse = await _client.GetAsync("/artists/delete-me");
+            Assert.Equal(HttpStatusCode.NotFound, getResponse.StatusCode);
+        }
+
+        // Test av 400 - Bad request
+        [Fact]
+        public async Task AddArtist_ReturnsBadRequest_WhenMissingFields()
+        {
+            var invalidArtist = new Artist { Id = "", ArtistName = "" };
+
+            var response = await _client.PostAsync("/artists", JsonContent.Create(invalidArtist));
+
+            Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
+        }
+
+
+        //Test av 404 - Artist finnes ikke
+        [Fact]
+        public async Task GetArtistById_ReturnsNotFound_WhenArtistDoesNotExist()
+        {
+            var response = await _client.GetAsync("/artists/does-not-exist");
+
+            Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
+        }
+
+        //Test av 409 - Artist finnes allerede
+        [Fact]
+        public async Task AddArtist_ReturnsConflict_WhenArtistAlreadyExists()
+        {
+            var artist = new Artist { Id = "abc", ArtistName = "Test" };
+
+            await _client.PostAsync("/artists", JsonContent.Create(artist));
+            var response = await _client.PostAsync("/artists", JsonContent.Create(artist));
+
+            Assert.Equal(HttpStatusCode.Conflict, response.StatusCode);
+        }
+
+        //Test av caching funksjon med mock
+        [Fact]
+        public async Task GetArtistWithSpotify_UsesCache_OnSecondCall()
+        {
+            // Arrange
+            var artist = new Artist { Id = "abc", ArtistName = "TestArtist" };
+            await _client.PostAsync("/artists", JsonContent.Create(artist));
+
+            var mockSpotify = new Mock<ISpotifyClient>();
+            mockSpotify.Setup(x => x.GetArtist("abc"))
+                       .ReturnsAsync(new SpotifyArtistDetails
+                       {
+                           Popularity = 99,
+                           Genres = new List<string> { "rock" }
+                       });
+
+            var factory = new WebApplicationFactory<Program>()
+                .WithWebHostBuilder(builder =>
+                {
+                    builder.ConfigureServices(services =>
+                    {
+                        // Erstatt ekte SpotifyClient med mock
+                        services.AddSingleton<ISpotifyClient>(mockSpotify.Object);
+                    });
+                });
+
+            var client = factory.CreateClient();
+
+            // Act – første kall (skal hente fra Spotify)
+            await client.GetAsync("/artists/abc/spotify");
+
+            // Act – andre kall (skal hente fra cache)
+            await client.GetAsync("/artists/abc/spotify");
+
+            // Assert – SpotifyClient skal kun ha blitt kalt én gang
+            mockSpotify.Verify(x => x.GetArtist("abc"), Times.Once);
+        }
+
+
+    }
+}
