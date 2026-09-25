@@ -46,6 +46,6 @@ jobs:
         uses: azure/container-apps-deploy-action@v2
         with:
           resourcegroup: rg-ss-test-01
-          environment: caenv-brights-2026
+          environment: env-ss-test-01
           name: capp-ss-test-01
           imageToDeploy: ${{ secrets.ACR_LOGIN_SERVER }}/artistapi:${{ github.sha }}
