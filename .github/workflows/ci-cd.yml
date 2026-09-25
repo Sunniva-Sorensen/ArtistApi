@@ -45,7 +45,7 @@ jobs:
       - name: Deploy to Azure Container Apps
         uses: azure/container-apps-deploy-action@v2
         with:
-          resourcegroup: rg-ss-test-01
-          environment: env-ss-test-01
-          name: capp-ss-test-01
+          resourceGroup: rg-ss-test-01
+          containerAppEnvironment: env-ss-test-01
+          containerAppName: capp-ss-test-01
           imageToDeploy: ${{ secrets.ACR_LOGIN_SERVER }}/artistapi:${{ github.sha }}
