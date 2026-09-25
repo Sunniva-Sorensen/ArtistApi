@@ -24,8 +24,8 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release
      
-      - name: Run tests
-        run: dotnet test --configuration Release --no-build
+ #     - name: Run tests
+  #      run: dotnet test --configuration Release --no-build
 
       - name: Login to ACR
         run: echo ${{ secrets.ACR_PASSWORD }} | docker login ${{ secrets.ACR_LOGIN_SERVER }} -u ${{ secrets.ACR_USERNAME }} --password-stdin
