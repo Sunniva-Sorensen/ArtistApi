@@ -26,7 +26,6 @@ C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\ArtistApi.csproj.Up2Date
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\ArtistApi.dll
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\refint\ArtistApi.dll
@@ -34,3 +33,15 @@ C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\ArtistApi.genruntimeconfig.cache
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\obj\Debug\net10.0\ref\ArtistApi.dll
 C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Microsoft.AspNetCore.TestHost.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Azure.Extensions.AspNetCore.Configuration.Secrets.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Microsoft.Identity.Client.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\System.Memory.Data.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\sunns\OneDrive\Dokumenter vgs\Brights\ArtistApi\ArtistApi\bin\Debug\net10.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

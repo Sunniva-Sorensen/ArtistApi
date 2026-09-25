@@ -107,7 +107,6 @@ namespace ArtistsApi.Tests
         {
             // Arrange
             var artist = new Artist { Id = "abc", ArtistName = "TestArtist" };
-            await _client.PostAsync("/artists", JsonContent.Create(artist));
 
             var mockSpotify = new Mock<ISpotifyClient>();
             mockSpotify.Setup(x => x.GetArtist("abc"))
@@ -128,6 +127,7 @@ namespace ArtistsApi.Tests
                 });
 
             var client = factory.CreateClient();
+            await client.PostAsync("/artists", JsonContent.Create(artist));
 
             // Act – første kall (skal hente fra Spotify)
             await client.GetAsync("/artists/abc?includeDetails=true");
